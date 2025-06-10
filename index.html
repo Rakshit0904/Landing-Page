@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Code Villa</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">Code Villa</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#signup">Sign Up</a></li>
+          <li><a href="#signin">Sign In</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about">
+  <div class="container about-container">
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>Welcome to Code Villa! We are a tech-driven company focused on delivering high-quality software solutions and tech education resources. Join us in building a smarter, digital future.</p>
+    
+    <!--More Info Button-->
+    <button class="more-info-button">More Info</button>
+    </div>
+    <div class="about-image">
+      <img src="codevilla.jpg" alt="Code Villa Office Illustration" />
+    </div>
+  </div>
+</section>
+<div id="more-content"
+style="display:none; margin-top:10px;">
+   <p>At Code Villa, we also offer workshop programs, and real-world project experience to help you grow your tech experience to help you grow your tech career.</p>
+</div>
+
+  <section id="services">
+  <h2 class="section-title">Our Features & Services.</h2>
+  <div class="services-container">
+    <div class="service-card">
+      <img src="webpic.webp" alt="Web Development">
+      <h3>Web Development</h3>
+      <p>We build responsive, user-friendly websites tailored to your brand and business goals.</p>
+      <button class="service-btn">More</button>
+    </div>
+
+    <div class="service-card">
+      <img src="appdev.png" alt="App Development">
+      <h3>App Development</h3>
+      <p>Custom Android/iOS apps with smooth UI, high performance, and secure architecture.</p>
+      <button class="service-btn">More</button>
+    </div>
+
+    <div class="service-card">
+      <img src="training.jpg" alt="Technical Training">
+      <h3>Technical Training</h3>
+      <p>Hands-on training programs in Web, App, AI, and more for students and professionals.</p>
+      <button class="service-btn">More</button>
+    </div>
+
+    <div class="service-card">
+      <img src="consulting.png" alt="Project Consultation">
+      <h3>Project Consultation</h3>
+      <p>Get expert help for project planning, execution, and development best practices.</p>
+      <button class="service-btn">More</button>
+    </div>
+  </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Code Villa. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+  document.querySelector('.more-info-btn').addEventListener('click', function () {
+    const moreContent = document.getElementById('more-content');
+    moreContent.style.display = moreContent.style.display === 'none' ? 'block' : 'none';
+  });
+</script>
+</body>
+</html>
